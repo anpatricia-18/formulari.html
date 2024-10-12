@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulari</title>
+<style>
+body {
+  background-image: url("logo.jpg");
+}
+</style>
+</head>
+</body>
+<form>      
+    <!-- Informació personal -->
+    <fieldset>
+      <legend>Informació personal</legend>
+      <label for="nom">Nom complet:</label>
+      <input type="text" id="nom" name="nom" maxlength="30" required><br><br>
+  
+      <label for="email">Correu electrònic:</label>
+      <input type="email" id="email" name="email" required><br><br>
+  
+      <label for="data_naixement">Data de naixement:</label>
+      <input type="date" id="data_naixement" name="data_naixement" required><br><br>
+  
+      <label>Sexe:</label><br>
+      <input type="radio" id="masculi" name="sexe" value="Masculí">
+      <label for="masculi">Masculí</label><br>
+      
+      <input type="radio" id="femeni" name="sexe" value="Femení" checked>
+      <label for="femeni">Femení</label><br>
+
+      <input type="radio" id="no_binari" name="sexe" value="No binari">
+      <label for="no_binari">No binari</label><br>
+      
+      <input type="radio" id="altres" name="sexe" value="Altres">
+      <label for="altres">Altres</label><br><br>
+    </fieldset>
+
+      <!-- Interessos -->
+  <fieldset>
+    <legend>Activitats esportives</legend>
+    <label for="futbol">Futbol:</label>
+    <input type="checkbox" id="futbol" name="activitats" value="Futbol"><br>
+
+    <label for="bàsquet">Bàsquet:</label>
+    <input type="checkbox" id="bàsquet" name="activitats" value="Bàsquet"><br>
+
+    <label for="natacio">Natació:</label>
+    <input type="checkbox" id="natacio" name="activitats" value="Natació"><br><br>
+
+    <label for="categoria">Categoria a la que pertany:</label>
+    <select id="categoria" name="categoria">
+      <option value="Benjamí">Benjamí</option>
+      <option value="Aleví">Aleví</option>
+      <option value="Infantil">Infantil</option>
+    </select><br><br>
+  </fieldset>
+  <input type="submit" value="Enviar">
+  <img src="Capturaformulari.PNG" alt="Imatge Formulari">
+</form>
+</html>
+  
